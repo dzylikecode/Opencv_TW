@@ -1,0 +1,4 @@
+.vscode/
+!opencv_vscode_config/.vscode/
+Build/
+Makefile
