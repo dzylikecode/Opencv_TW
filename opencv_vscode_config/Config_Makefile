@@ -1,0 +1,27 @@
+g_workspace=F:/Git_WorkSpace/LaCpp/Opencv_TW
+g_BuildPath=$(g_workspace)/Build
+
+#COMPILER_FLAGS specifies the additional compilation options we're using
+# -w suppresses all warnings
+# -Wl,-subsystem,windows gets rid of the console window
+s_OutputWindow ?=#-w -Wl,-subsystem,windows
+g_CompilerOptions =$(s_OutputWindow) -fdiagnostics-color=always -g -std=c++17 -m64 
+
+# opencv library
+g_Opencv_IncludePath=F:/user/LaCpp/Package/MinGW/opencv/install/include
+g_Opencv_LibPath=F:/user/LaCpp/Package/MinGW/opencv/install/x64/mingw/lib
+g_Opencv_Link = -lopencv_calib3d454   \
+        		-lopencv_core454   \
+                -lopencv_dnn454   \
+                -lopencv_features2d454   \
+                -lopencv_flann454   \
+                -lopencv_highgui454   \
+                -lopencv_imgcodecs454   \
+                -lopencv_imgproc454   \
+                -lopencv_ml454   \
+                -lopencv_objdetect454   \
+                -lopencv_photo454   \
+                -lopencv_stitching454   \
+                -lopencv_video454   \
+                -lopencv_videoio454
+

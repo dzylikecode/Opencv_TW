@@ -1,4 +1,4 @@
 .vscode/
-!opencv_vscode_config/.vscode/
 Build/
-Makefile
+Config_Makefile
+!opencv_vscode_config/Config_Makefile
